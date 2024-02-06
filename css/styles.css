@@ -2,23 +2,9 @@ html {
     scroll-behavior: smooth;
 }
 
-.animate {
-    opacity: 0;
-    filter: blur(5px);
-    transform: translateX(-100%);
-    transition: all 1s;
-}
-
-.show {
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
-}
-
-@media(prefers-reduced-motion) {
-    .animate {
-        transition: none;
-    }
+body {
+    background-color: #0e172c;
+    background-size: cover;
 }
 
 header {
@@ -41,6 +27,13 @@ img {
     font-size: 22px;
     font-weight: bold;
 }
+
+.navbar {
+    background-color:#0e172c;
+    padding: 8px;
+    opacity: 0.9;
+}
+
 .navbar .navbar-nav .nav-link {
     font-size: 1.1em;
 }
@@ -53,4 +46,29 @@ img {
 .navbar-nav > li {
     padding-left:30px;
     padding-right:30px;
+}
+
+#about {
+    background: rgb(14,23,44); 
+    opacity: 0.9; 
+    border-radius:5px;
+}
+
+#project {
+    background-color:#d3d3d3;
+    cursor: pointer;
+    text-decoration:none;
+    color: #0e172c;
+}
+
+#journeySection {
+    float:left;
+    align-self: baseline; 
+    background: rgb(14,23,44); 
+    opacity: 0.8; 
+    border-radius:5px;
+}
+
+.copyright {
+    background-color: #d9d4e7;
 }
